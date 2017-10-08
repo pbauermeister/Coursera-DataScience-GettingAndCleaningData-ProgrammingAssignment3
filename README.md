@@ -27,10 +27,11 @@ As per the Coursera instructions:
 | Object | Description |
 | ----------------- | ---------------------------------------------------------------------------------- |
 | `UCI HAR Dataset` | Directory containing the files of the archive (after being downloaded and unzipped), less the inertial signals (massive raw data). |
-| `dataset-2.txt`   | Final dataset obtained at the end of step 5, table format, for project submission. |
 | `README.md`       | This file. |
-| `run_analysis.R`  | The R script implementing the project objective. Please setwd() to the enclosing directory before runnint it. |
 | `codebook.md`     | Description of the `dataset-2.txt` file. |
+| `columns.txt`     | Full list of column names of the `dataset-2.txt` file. |
+| `dataset-2.txt`   | Final dataset obtained at the end of step 5, table format, for project submission. |
+| `run_analysis.R`  | The R script implementing the project objective. Please setwd() to the enclosing directory before runnint it. |
 
 ## 3. Original Data
 
