@@ -18,12 +18,12 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 | ------- | ------------------------ |
 | `1`     | activity |
 | `2`     | subject |
-| `3`     | tBodyAcc-mean()-Y-avg |
-| `4`     | tBodyAcc-mean()-Z-avg |
-| `5`     | tBodyAcc-std()-X-avg |
-| `6`     | tBodyAcc-std()-Y-avg |
-| `7`     | tBodyAcc-std()-Z-avg |
-| `8`     | tGravityAcc-mean()-X-avg |
+| `3`     | tBodyAcc-mean-Y-avg |
+| `4`     | tBodyAcc-mean-Z-avg |
+| `5`     | tBodyAcc-std-X-avg |
+| `6`     | tBodyAcc-std-Y-avg |
+| `7`     | tBodyAcc-std-Z-avg |
+| `8`     | tGravityAcc-mean-X-avg |
 | `9..67` | etc. |
 
 Please see the file `columns.txt` for a full list of column names.
@@ -45,7 +45,7 @@ To denote the fact that they are averages, `-avg` has been postfixed to each col
 As such, they retain the same units as the original features, which are explained below.
 
 Note: Some of the original features seem to have a typo (`BodyBody` e.g. `fBodyBodyAccJerkMag-mean()`).
-In this data set, they have been renamed to fix the typo (`fBodyAccJerkMag-mean()-avg`).
+In this data set, they have been renamed to fix the typo (`fBodyAccJerkMag-mean-avg`).
 
 ## 6. Original Feature Selection 
 

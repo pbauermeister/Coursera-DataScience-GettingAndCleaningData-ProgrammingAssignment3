@@ -47,8 +47,14 @@ make_data_frame <- function(dataset) {
     ## Keep only mean and standard deviation values (step 2.)
     measurements.wanted_columns <- grep("-(mean|std)[(]", features.descr)
     measurements <- measurements.all[, measurements.wanted_columns]
-    # # Cosmetic: Rename column names in the form "*BodyBody*" to "*Body*"
-    # names(measurements) <- sub("BodyBody", "Body", names(measurements))
+
+    ## Cosmetic: Tidy up column names
+    # - rename column names in the form "*BodyBody*" to "*Body*"
+    names(measurements) <- sub("BodyBody", "Body", names(measurements))
+    # - remove ()'s
+    names(measurements) <- sub("[()][)]", "", names(measurements))
+    # - append -avg to denote future averaging
+    names(measurements) <- sub("$", "-avg", names(measurements))
     
     ## Create the data frame
     data <- data.frame(subject, activity)
@@ -99,5 +105,4 @@ for (a in activities) {
 #write.csv(dataframe, "dataset-2.csv", row.names=F)
 
 ## Write final dataset as table, w/o column names as requested
-write.table(dataframe, "dataset-2.txt", row.names=F, col.names=F, quote=F)
-
+write.table(dataframe, "dataset-2.txt", row.names=F, quote=F)
