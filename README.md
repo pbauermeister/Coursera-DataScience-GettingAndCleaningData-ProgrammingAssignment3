@@ -26,7 +26,7 @@ As per the Coursera instructions:
 
 | Object | Description |
 | ----------------- | ---------------------------------------------------------------------------------- |
-| `UCI HAR Dataset` | Directory containing the files of the archive after being downloaded and unzipped. |
+| `UCI HAR Dataset` | Directory containing the files of the archive (after being downloaded and unzipped), less the inertial signals (massive raw data). |
 | `dataset-2.txt`   | Final dataset obtained at the end of step 5, table format, for project submission. |
 | `README.md`       | This file. |
 | `run_analysis.R`  | The R script implementing the project objective. Please setwd() to the enclosing directory before runnint it. |
